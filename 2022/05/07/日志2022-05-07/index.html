@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <title>日志2022-05-07 | Ry2ushen的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="日志,算法,蓝桥杯,学习," />
+  
+
+  <script>
+    console.log('\n%c Hexo-theme-bmw v4.0 ' + '%c 🎉 https://github.com/dongyuanxin/theme-bmw 🎉\n' + '\n%c View demo online ' + '%c 🔍 https://godbmw.com/ 🔍  \n' , 'color: #fadfa3; background: #030307; padding:3px 0;', '', 'color: #fadfa3; background: #030307; padding:3px 0;', '');
+  </script>
+
+  
+
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/icon/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  
+<script src="/js/util.js"></script>
+<script src="/js/valine.min.js"></script>
+
+
+  
+
+  
+    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js" async></script>
+  
+
+  
+    <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+  
+  
+  <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" async></script>
+  
+  
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+
+    
+
+    <div id="app">
+
+      <div class="header-wrap">
+  <header>
+    <div class="site-brand">
+      <div class="site-title">
+        <a href="/">Ry2ushen&#39;s blog</a>
+      </div>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav-menu">
+      
+        <li class="nav-item" data-path="/">
+          
+            <a 
+              href="/"
+              target="_self"
+            >
+              主页
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          
+            <a 
+              href="/archives/"
+              target="_self"
+            >
+              归档
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          
+            <a 
+              href="/categories/"
+              target="_self"
+            >
+              分类
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          
+            <a 
+              href="/tags/"
+              target="_self"
+            >
+              标签
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          
+            <a 
+              href="/friends/"
+              target="_self"
+            >
+              友链
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          
+            <a 
+              href="/about/"
+              target="_self"
+            >
+              关于
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="">
+          
+            <a href="javascript:void(0);" v-else>抓到我</a>
+            <ul class="nav-menu--dropdown">
+              
+                <li>
+                  <a 
+                    href="https://github.com/LspServePublic" 
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+      </ul>
+    </nav>
+    <i class="iconfont icon-menu"></i>
+  </header>
+</div>
+
+<script>
+  let links = document.querySelectorAll('.nav-item');
+  for(let link of links){
+    let childrenLink = link.querySelector('ul');
+    link.addEventListener('mouseenter', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown active";
+      }
+    })
+    link.addEventListener('mouseleave', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown";
+      }
+    })
+  }
+  let rootRealPath = getRealPath(window.location.pathname, true);
+  for(let link of links) {
+    let linkPath = link.getAttribute("data-path");
+    if(linkPath && getRealPath(linkPath, true) === rootRealPath) {
+      link.className = "nav-item hover";
+    }
+  }
+
+  let iconMenu = document.querySelector("i.iconfont.icon-menu"),
+    iconMenuClicked = false;
+  let navDOM = document.querySelector("nav.site-navigation");
+  iconMenu.addEventListener("click", () => {
+    iconMenuClicked 
+      ? navDOM.className = "site-navigation active"
+      : navDOM.className = "site-navigation";
+    iconMenuClicked = !iconMenuClicked;
+  })
+</script>
+
+      
+
+
+
+
+
+
+
+
+<div class="container post-index">
+
+  
+
+<div class="post">
+  <h1 class="article-title">
+    <span>日志2022-05-07</span>
+  </h1>
+  <div class="article-top-meta">
+    <span>
+      发布 : 
+      2022-05-07
+    </span>
+    
+      <span>
+        分类 : 
+          <a href="/categories/%E6%97%A5%E5%BF%97/">
+            日志
+          </a>
+      </span>
+    
+    
+  </div>
+
+  
+
+  <div class="article-content">
+    <div class="markdown-body">
+      <p>课程原链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV15J411z7J7/">蓝桥杯C++ AB组辅导课（试听课）_哔哩哔哩_bilibili</a></p>
+<h2 id="如何准备蓝桥杯考试"><a href="#如何准备蓝桥杯考试" class="headerlink" title="如何准备蓝桥杯考试"></a>如何准备蓝桥杯考试</h2><ol>
+<li>系统学习知识点<ul>
+<li>写例题</li>
+<li>理思路</li>
+<li>多复习</li>
+</ul>
+</li>
+<li>刷历年题<ul>
+<li>保证刷题量</li>
+<li>注重调试，调试很重要，避免程序Bug，避免耗费时间</li>
+<li>总结套路</li>
+</ul>
+</li>
+<li>打模拟赛<ul>
+<li>感受真实比赛氛围</li>
+</ul>
+</li>
+</ol>
+<h2 id="做题套路"><a href="#做题套路" class="headerlink" title="做题套路"></a>做题套路</h2><h3 id="算法题特点"><a href="#算法题特点" class="headerlink" title="算法题特点"></a>算法题特点</h3><ol>
+<li>模型少</li>
+<li>思维难度高</li>
+<li>编写实际代码，理论指导实践</li>
+</ol>
+<h3 id="写题基本步骤"><a href="#写题基本步骤" class="headerlink" title="写题基本步骤"></a>写题基本步骤</h3><ol>
+<li><p>阅读题目描述</p>
+</li>
+<li><p>抽象出模型</p>
+</li>
+<li><p>思考可用解题方法</p>
+<ul>
+<li>暴力</li>
+<li>深搜</li>
+<li>图论</li>
+<li>贪心</li>
+<li>DP</li>
+<li>…</li>
+</ul>
+</li>
+<li><p>判断算法可行性</p>
+<ul>
+<li>保证正确性，是否能得出正确结果</li>
+<li>时间限制，时间是否达标，是否超时（时间复杂度）</li>
+<li>根据不同的数据规模可以判断可用算法类型，数据规模越小，可行时间复杂度越高，可据此缩小算法选择范围</li>
+</ul>
+</li>
+<li><p>编写代码实现，调试得到正确结果</p>
+</li>
+</ol>
+<h3 id="不同数据规模可用算法类型"><a href="#不同数据规模可用算法类型" class="headerlink" title="不同数据规模可用算法类型"></a>不同数据规模可用算法类型</h3><ul>
+<li>内容较多，本文不展示，附上链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/blog/content/32/">由数据范围反推算法复杂度以及算法内容 - AcWing</a></li>
+</ul>
+<h2 id="递归与递推"><a href="#递归与递推" class="headerlink" title="递归与递推"></a>递归与递推</h2><h3 id="例：斐波那契数列"><a href="#例：斐波那契数列" class="headerlink" title="例：斐波那契数列"></a>例：斐波那契数列</h3><ul>
+<li><p>分析：对于斐波那契数列的第n项来说<br>$f(n)&#x3D;f(n-1)+f(n-2),n\ge3$，注意边界条件</p>
+</li>
+<li><p>代码实现：递归实现</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> scanner.nextInt();</span><br><span class="line">    System.out.println(f(n));</span><br><span class="line">    scanner.close();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(n == <span class="number">1</span> || n == <span class="number">2</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> f(n - <span class="number">1</span>) + f(n - <span class="number">2</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：<ol>
+<li>递归的主要思想就是自己调用自己</li>
+<li>要注意边界条件</li>
+<li>所有递归都可以转化为一颗递归搜索树，以便我们分析递归执行顺序，可以用于剪枝，减少递归计算量</li>
+</ol>
+</li>
+</ul>
+<h3 id="例：递归实现指数型枚举"><a href="#例：递归实现指数型枚举" class="headerlink" title="例：递归实现指数型枚举"></a>例：递归实现指数型枚举</h3><p>原题链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/94/">92. 递归实现指数型枚举 - AcWing题库</a></p>
+<ul>
+<li>分析：考虑n个数的每个数都有两种选择情况，要么被选，要么没选，分析递归情况，并且记录选择情况</li>
+<li>代码实现：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  <span class="keyword">final</span> <span class="keyword">static</span> <span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> <span class="number">16</span>; <span class="comment">// 限制数字最大量为15，0号元素不使用</span></span><br><span class="line">  <span class="keyword">static</span> <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="type">boolean</span>[] st = <span class="keyword">new</span> <span class="title class_">boolean</span>[N]; <span class="comment">// st[u]为false则数u没被选，反之被选</span></span><br><span class="line">  <span class="keyword">static</span> <span class="type">boolean</span>[][] ways = <span class="keyword">new</span> <span class="title class_">boolean</span>[<span class="number">1</span> &lt;&lt; <span class="number">15</span>][N]; <span class="comment">// 存储结果</span></span><br><span class="line">  <span class="keyword">static</span> <span class="type">int</span> <span class="variable">cnt</span> <span class="operator">=</span> <span class="number">0</span>; <span class="comment">// 存储选择情况数量</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">    n = scanner.nextInt();</span><br><span class="line">    dfs(<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; cnt; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">                <span class="comment">// 为true则数j被选，输出数j</span></span><br><span class="line">        <span class="keyword">if</span>(ways[i][j]) &#123;</span><br><span class="line">          System.out.print(j + <span class="string">&quot; &quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">    scanner.close();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">dfs</span><span class="params">(<span class="type">int</span> u)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (u &gt; n) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[i]) &#123;</span><br><span class="line">          ways[cnt][i] = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      cnt++;</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// st[u]默认为false，表示u未选</span></span><br><span class="line">    dfs(u + <span class="number">1</span>);</span><br><span class="line">    st[u] = <span class="literal">true</span>; <span class="comment">// 表示u被选</span></span><br><span class="line">    dfs(u + <span class="number">1</span>);</span><br><span class="line">    st[u] = <span class="literal">false</span>; <span class="comment">// 还原数u的选择情况为未选</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：此题是一道dfs题，指数型枚举指的是结果的每一项中的元素成指数型增长。如果使用暴力枚举不仅复杂还容易超时，不可取。使用递归深搜要注意递归结束条件，以及回溯后的状态回退，防止子问题的解影响到父问题的解</li>
+</ul>
+<h3 id="例：递归实现排列型枚举"><a href="#例：递归实现排列型枚举" class="headerlink" title="例：递归实现排列型枚举"></a>例：递归实现排列型枚举</h3><p>原题链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/96/">94. 递归实现排列型枚举 - AcWing题库</a></p>
+<ul>
+<li><p>分析：可以依次枚举每个数放到哪一个位置，也可以依次枚举每一个位置放哪一个数，画出递归搜索树</p>
+</li>
+<li><p>知识补充：字典序是指两个序列从首位对齐，按位比较，一旦其中一个序列中有一位的值比另一个序列中相对应的位的值大，则该序列的字典序大。特别的如果两个序列的长度不同，但长序列与短序列相对应的子序列相等，则长序列的字典序较大。在此题中，依次从小到大枚举即可</p>
+</li>
+<li><p>代码实现：</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  <span class="keyword">final</span> <span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">  <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">  <span class="type">int</span>[] state = <span class="keyword">new</span> <span class="title class_">int</span>[N]; <span class="comment">// 位置集合</span></span><br><span class="line">  <span class="type">boolean</span>[] used = <span class="keyword">new</span> <span class="title class_">boolean</span>[N]; <span class="comment">// 每个数的使用状态集合，true为被使用，false为未被使用</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">void</span> <span class="title function_">dfs</span><span class="params">(<span class="type">int</span> u)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(u &gt; n) &#123;</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        System.out.print(state[i] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println();</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 依次枚举每个分支，即当前位置可以填的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span>(!used[i]) &#123;</span><br><span class="line">        state[u] = i;</span><br><span class="line">        used[i] = <span class="literal">true</span>;</span><br><span class="line">        dfs(u + <span class="number">1</span>);</span><br><span class="line">        </span><br><span class="line">        used[i] = <span class="literal">false</span>; <span class="comment">// 恢复状态</span></span><br><span class="line">        state[u] = <span class="number">0</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">    <span class="type">Main</span> <span class="variable">main</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Main</span>();</span><br><span class="line">    main.n = scanner.nextInt();</span><br><span class="line">    main.dfs(<span class="number">1</span>); <span class="comment">// 从第一个位置开始枚举</span></span><br><span class="line">    scanner.close();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：此题为一道深度优先搜索题，使用深度优先搜索可以不重不漏地得到全排列</li>
+</ul>
+    </div>
+  </div>
+  
+    <div class="copy-right">
+      <div class="markdown-body">
+        <blockquote>
+        
+        
+          本文作者 : Ry2ushen <br/>
+        
+        原文链接 : <a href="">https://ryuushen.ml/2022/05/07/%E6%97%A5%E5%BF%972022-05-07/</a><br>
+        版权声明 : 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+        </blockquote>
+      </div>
+    </div>
+  
+  
+  
+    <div class="social-share"
+  style="margin-top: -2rem"
+  data-wechat-qrcode-title="<p>微信扫一扫</p>"
+  data-wechat-qrcode-helper="<p>微信右上角, 扫一扫分享</p>"
+   data-sites="qzone, qq, weibo, wechat, douban, google, facebook, twitter" 
+  
+>
+  <span style="color: #6b7487; font-size: 1.4rem;">分享到: </span>
+</div>
+<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js" async>
+  
+
+  
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+      <span>
+        
+          <i class="iconfont icon-06tags"></i>标签: 
+          
+          <span class="span--tag">
+            <a href="/tags/%E7%AE%97%E6%B3%95/">
+              #算法
+            </a>
+          </span>
+          
+          <span class="span--tag">
+            <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
+              #蓝桥杯
+            </a>
+          </span>
+          
+          <span class="span--tag">
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+              #学习
+            </a>
+          </span>
+          
+        
+      </span>
+    </div>
+    <div class="article-meta pull-right">
+    </div>
+  </div>
+</div>
+
+
+  <aside id="sidebar">
+    <p id="sidebar-header"></p>
+    <ol id="sidebar-toc"></ol>
+  </aside>
+  <script async>setTimeout(generateToc, 10);</script>
+
+
+  <nav class="post-navigation">
+    
+      <div class="nav-pre">
+        <i class="iconfont icon-prev"></i>
+        上一篇:
+        <a href="/2022/05/06/%E6%97%A5%E5%BF%972022-05-06/" target="_self">日志2022-05-06</a>
+      </div>
+    
+    
+      <div class="nav-next">
+        下一篇:
+        <a href="/2022/05/08/%E6%97%A5%E5%BF%972022-05-08/" target="_self">日志2022-05-08</a>
+        <i class="iconfont icon-next"></i>
+      </div>
+    
+  </nav>
+
+   
+
+   
+
+</div>
+
+
+      <footer>
+  <p class="site-info">
+    博客已萌萌哒运行<span id="time-to-now"></span><span class="my-face">(●'◡'●)ﾉ♥</span>
+    <br>
+    Theme - <a target="_blank" rel="noopener" href="https://github.com/dongyuanxin/theme-bmw">BMW</a> | Made With 💗 | Powered by <a target="_blank" rel="noopener" href="https://godbmw.com/">GodBMW</a>
+    <br>
+    
+      <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a>提供统计服务
+    
+  </p>
+</footer>
+
+
+
+<script>
+const timeToNowDOM = document.querySelector("#time-to-now");
+const startTimestamp = new Date(2021, 9, 1).getTime();
+
+const updateTimeStr = () => {
+  let offset = parseInt(
+      (new Date().getTime() - startTimestamp) / 1000,
+      10
+    ),
+    day = Math.floor(offset / 86400),
+    hour = Math.floor((offset % 86400) / 3600),
+    minute = Math.floor(((offset % 86400) % 3600) / 60),
+    second = Math.floor(((offset % 86400) % 3600) % 60);
+  timeToNowDOM.innerHTML =
+    day + "天" + hour + "小时" + minute + "分钟" + second + "秒";
+  setTimeout(updateTimeStr, 500);
+}
+
+setTimeout(updateTimeStr, 500);
+</script>
+
+
+      <div class="back-to-top hidden">
+  <span>
+    <i class="iconfont icon-60"></i><span></span>%
+  </span>
+</div>
+
+<script>
+const updateIconToTop = percent => {
+  let dom = document.querySelector(".back-to-top span span");
+  dom.innerText = percent;
+  if(percent < 1) {
+    document.querySelector(".back-to-top").className = "back-to-top hidden";
+  } else {
+    document.querySelector(".back-to-top").className = "back-to-top";
+  }
+}
+
+const handleScoll = () => {
+  let isRunning = false;
+  return () => {
+    if (isRunning) return;
+    isRunning = true;
+    window.requestAnimationFrame(timestamp => {
+      let scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop,
+        scrollHeight =
+          document.documentElement.scrollHeight ||
+          document.body.scrollHeight,
+        clientHeight =
+          document.documentElement.clientHeight ||
+          document.body.clientHeight;
+      isRunning = false;
+      if (scrollTop <= 1) {
+        updateIconToTop(0);
+        return;
+      }
+      if (scrollTop + clientHeight >= scrollHeight) {
+        updateIconToTop(100);
+      } else {
+        updateIconToTop(parseInt(
+          100 * scrollTop / (scrollHeight - clientHeight),
+          10
+        ));
+      }
+    });
+  };
+}
+
+const backToTop = () => {
+  let scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop,
+    delay = 10,
+    time = 200;
+  if (scrollTop <= 20) {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    return;
+  }
+  let step = Math.ceil(scrollTop * delay / time);
+  let timer = setInterval(() => {
+    scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop - step <= 0) {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      clearInterval(timer);
+    } else {
+      document.documentElement.scrollTop = scrollTop - step;
+      document.body.scrollTop = scrollTop - step;
+    }
+  }, delay);
+}
+
+document.addEventListener("scroll", handleScoll(), false);
+
+document.querySelector(".back-to-top").addEventListener("click", backToTop, false);
+
+</script>
+
+    </div>
+
+    
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script>
+  (() => {
+    const mathjaxConfig = {
+      showProcessingMessages: false, //关闭js加载过程信息
+      messageStyle: "none", //不显示信息
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+      },
+      "HTML-CSS": {
+        availableFonts: ["STIX", "TeX"], //可选字体
+        showMathMenu: false //关闭右击菜单显示
+      }
+    }
+
+    let mathjaxInterval = setInterval(() => {
+      if(!window.MathJax){
+        return;
+      }
+      window.MathJax.Hub.Config(mathjaxConfig)
+      window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('app')])
+
+      clearInterval(mathjaxInterval)
+    }, 10)    
+  })()
+</script>
+    
+
+    <script src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script>
+<script async>
+  let fancyTimer = setInterval(function(){
+    if(!window.$){
+      return;
+    }
+    $(document).ready(function() {
+      $(".post img").each(function () {
+        if($(this).parent().get(0).tagName.toLowerCase() === "a") {
+          return;
+        }
+        // $(this).attr("data-fancybox", "gallery"); // if you add 'data-fancybox', img will display after showed
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      });
+      
+      clearInterval(fancyTimer);
+    });
+  }, 10);
+</script>
+
+    
+  </body>
+
+</html>

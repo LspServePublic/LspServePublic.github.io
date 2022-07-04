@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <title>日志2022-06-02 | Ry2ushen的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="日志,算法,学习," />
+  
+
+  <script>
+    console.log('\n%c Hexo-theme-bmw v4.0 ' + '%c 🎉 https://github.com/dongyuanxin/theme-bmw 🎉\n' + '\n%c View demo online ' + '%c 🔍 https://godbmw.com/ 🔍  \n' , 'color: #fadfa3; background: #030307; padding:3px 0;', '', 'color: #fadfa3; background: #030307; padding:3px 0;', '');
+  </script>
+
+  
+
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/icon/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  
+<script src="/js/util.js"></script>
+<script src="/js/valine.min.js"></script>
+
+
+  
+
+  
+    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js" async></script>
+  
+
+  
+    <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+  
+  
+  <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" async></script>
+  
+  
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+
+    
+
+    <div id="app">
+
+      <div class="header-wrap">
+  <header>
+    <div class="site-brand">
+      <div class="site-title">
+        <a href="/">Ry2ushen&#39;s blog</a>
+      </div>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav-menu">
+      
+        <li class="nav-item" data-path="/">
+          
+            <a 
+              href="/"
+              target="_self"
+            >
+              主页
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          
+            <a 
+              href="/archives/"
+              target="_self"
+            >
+              归档
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          
+            <a 
+              href="/categories/"
+              target="_self"
+            >
+              分类
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          
+            <a 
+              href="/tags/"
+              target="_self"
+            >
+              标签
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          
+            <a 
+              href="/friends/"
+              target="_self"
+            >
+              友链
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          
+            <a 
+              href="/about/"
+              target="_self"
+            >
+              关于
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="">
+          
+            <a href="javascript:void(0);" v-else>抓到我</a>
+            <ul class="nav-menu--dropdown">
+              
+                <li>
+                  <a 
+                    href="https://github.com/LspServePublic" 
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+      </ul>
+    </nav>
+    <i class="iconfont icon-menu"></i>
+  </header>
+</div>
+
+<script>
+  let links = document.querySelectorAll('.nav-item');
+  for(let link of links){
+    let childrenLink = link.querySelector('ul');
+    link.addEventListener('mouseenter', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown active";
+      }
+    })
+    link.addEventListener('mouseleave', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown";
+      }
+    })
+  }
+  let rootRealPath = getRealPath(window.location.pathname, true);
+  for(let link of links) {
+    let linkPath = link.getAttribute("data-path");
+    if(linkPath && getRealPath(linkPath, true) === rootRealPath) {
+      link.className = "nav-item hover";
+    }
+  }
+
+  let iconMenu = document.querySelector("i.iconfont.icon-menu"),
+    iconMenuClicked = false;
+  let navDOM = document.querySelector("nav.site-navigation");
+  iconMenu.addEventListener("click", () => {
+    iconMenuClicked 
+      ? navDOM.className = "site-navigation active"
+      : navDOM.className = "site-navigation";
+    iconMenuClicked = !iconMenuClicked;
+  })
+</script>
+
+      
+
+
+
+
+
+
+
+
+<div class="container post-index">
+
+  
+
+<div class="post">
+  <h1 class="article-title">
+    <span>日志2022-06-02</span>
+  </h1>
+  <div class="article-top-meta">
+    <span>
+      发布 : 
+      2022-06-02
+    </span>
+    
+      <span>
+        分类 : 
+          <a href="/categories/%E6%97%A5%E5%BF%97/">
+            日志
+          </a>
+      </span>
+    
+    
+  </div>
+
+  
+
+  <div class="article-content">
+    <div class="markdown-body">
+      <h2 id="今日工作"><a href="#今日工作" class="headerlink" title="今日工作"></a>今日工作</h2><ul>
+<li>写算法题</li>
+</ul>
+<h2 id="遇到的问题和总结"><a href="#遇到的问题和总结" class="headerlink" title="遇到的问题和总结"></a>遇到的问题和总结</h2><h3 id="剑指-Offer-68-II-二叉树的最近公共祖先"><a href="#剑指-Offer-68-II-二叉树的最近公共祖先" class="headerlink" title="剑指 Offer 68 - II. 二叉树的最近公共祖先"></a>剑指 Offer 68 - II. 二叉树的最近公共祖先</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/">原题链接</a></p>
+<ul>
+<li>分析：类似题目《二叉搜索树的最近公共祖先》，使用从根到两个子节点的路径来寻找最近公共祖先</li>
+<li>代码实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">  List&lt;TreeNode&gt; temp = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">  List&lt;TreeNode&gt; path1 = <span class="literal">null</span>;</span><br><span class="line">  List&lt;TreeNode&gt; path2 = <span class="literal">null</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> TreeNode <span class="title function_">lowestCommonAncestor</span><span class="params">(TreeNode root, TreeNode p, TreeNode q)</span> &#123;</span><br><span class="line">      dfs(root, p, q);</span><br><span class="line">      <span class="type">TreeNode</span> <span class="variable">ancestor</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">      <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">      <span class="comment">// 寻找两条路径的分叉点</span></span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; path1.size() &amp;&amp; i &lt; path2.size() i++) &#123;</span><br><span class="line">          <span class="type">TreeNode</span> <span class="variable">node1</span> <span class="operator">=</span> path1.get(i), node2 = path2.get(i);</span><br><span class="line">        <span class="keyword">if</span>(node1.val == node2.val) &#123;</span><br><span class="line">          ancestor = path1.get(i);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">// 当两个节点的值不同时终止循环，上一个赋值给ancestor的节点即为目标节点</span></span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> ancestor;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 深搜二叉树，寻找根节点到两个子节点的路径</span></span><br><span class="line">  <span class="keyword">void</span> <span class="title function_">dfs</span><span class="params">(TreeNode node, TreeNode p, TreeNode q)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(node == <span class="literal">null</span>) <span class="keyword">return</span>;</span><br><span class="line">      <span class="keyword">if</span>(path1 != <span class="literal">null</span> &amp;&amp; path2 != <span class="literal">null</span>) <span class="keyword">return</span>;</span><br><span class="line">    temp.add(node);</span><br><span class="line">    <span class="keyword">if</span>(node == p) &#123;</span><br><span class="line">      path1 = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;(temp);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(node == q) &#123;</span><br><span class="line">      path2 = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;(temp);</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(node.left, p, q);</span><br><span class="line">    dfs(node.right, p, q);</span><br><span class="line">    temp.remove(node);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：能够解答，但是效率较低</li>
+</ul>
+<h3 id="剑指-Offer-16-数值的整数次方"><a href="#剑指-Offer-16-数值的整数次方" class="headerlink" title="剑指 Offer 16. 数值的整数次方"></a>剑指 Offer 16. 数值的整数次方</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/">原题链接</a></p>
+<ul>
+<li>分析：由题目数据规模很容易想到该题不能用常规的迭代暴力乘得到结果，n也就是指数的取值范围太大，会超时，所以有了基于分治的快速幂算法，这里使用快速幂的二进制形式实现</li>
+<li>代码实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">myPow</span><span class="params">(<span class="type">double</span> x, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="type">double</span> <span class="variable">ans</span> <span class="operator">=</span> <span class="number">1.0</span>;</span><br><span class="line">    <span class="type">long</span> <span class="variable">b</span> <span class="operator">=</span> n;</span><br><span class="line">    <span class="comment">// 幂为负数的情况</span></span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">0</span>) &#123;</span><br><span class="line">      x = <span class="number">1</span> / x;</span><br><span class="line">      b = -b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// b 看作二进制数，每次取最后一位</span></span><br><span class="line">    <span class="keyword">while</span>(b &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span>((b &amp; <span class="number">1</span>) == <span class="number">1</span>) ans *= x; <span class="comment">// 如果为1则答案乘x</span></span><br><span class="line">      x *= x; <span class="comment">// 相当于每次对x进行平方操作，对应二进制数b的每位</span></span><br><span class="line">      b &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：分治思想把大问题转化为多个同类型的小问题然后合并小问题即可得到大问题的答案，此题中就是把指数分解为多个只有一位为1的二进制数，分别计算对应的幂后的积就是答案，而且大的幂可以从小的幂快速计算得到，时间复杂度大大降低</li>
+</ul>
+<h3 id="洛谷-P1010-NOIP1998-普及组-幂次方"><a href="#洛谷-P1010-NOIP1998-普及组-幂次方" class="headerlink" title="洛谷 P1010 [NOIP1998 普及组] 幂次方"></a>洛谷 P1010 [NOIP1998 普及组] 幂次方</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1010">原题链接</a></p>
+<ul>
+<li>分析：使用递归可以很简单地解决问题</li>
+<li>代码实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">  <span class="type">int</span> a;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> <span class="title function_">solution</span><span class="params">()</span> &#123;</span><br><span class="line">    a = sc.nextInt();</span><br><span class="line">    <span class="type">String</span> <span class="variable">ans</span> <span class="operator">=</span> recur(a);</span><br><span class="line">    System.out.println(ans);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  String <span class="title function_">recur</span><span class="params">(<span class="type">int</span> num)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (num == <span class="number">0</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="string">&quot;0&quot;</span>;</span><br><span class="line">    <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 判断二进制位是否为1</span></span><br><span class="line">    <span class="keyword">while</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> ((num &amp; <span class="number">1</span>) == <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">// 递归分解指数</span></span><br><span class="line">        s = (i == <span class="number">1</span> ? <span class="string">&quot;2&quot;</span> : <span class="string">&quot;2(&quot;</span> + recur(i) + <span class="string">&quot;)&quot;</span>) + (s == <span class="string">&quot;&quot;</span> ? <span class="string">&quot;&quot;</span> : <span class="string">&quot;+&quot;</span>) + s;</span><br><span class="line">      &#125;</span><br><span class="line">      i++;</span><br><span class="line">      num &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> s;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Main</span>().solution();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：本题的难点并不在递归分解指数，而是输出，怎样输出才能得到答案是我们要着重考虑的问题</li>
+</ul>
+<h2 id="明日工作"><a href="#明日工作" class="headerlink" title="明日工作"></a>明日工作</h2><ul>
+<li>写算法题</li>
+</ul>
+    </div>
+  </div>
+  
+    <div class="copy-right">
+      <div class="markdown-body">
+        <blockquote>
+        
+        
+          本文作者 : Ry2ushen <br/>
+        
+        原文链接 : <a href="">https://ryuushen.ml/2022/06/02/%E6%97%A5%E5%BF%972022-06-02/</a><br>
+        版权声明 : 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+        </blockquote>
+      </div>
+    </div>
+  
+  
+  
+    <div class="social-share"
+  style="margin-top: -2rem"
+  data-wechat-qrcode-title="<p>微信扫一扫</p>"
+  data-wechat-qrcode-helper="<p>微信右上角, 扫一扫分享</p>"
+   data-sites="qzone, qq, weibo, wechat, douban, google, facebook, twitter" 
+  
+>
+  <span style="color: #6b7487; font-size: 1.4rem;">分享到: </span>
+</div>
+<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js" async>
+  
+
+  
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+      <span>
+        
+          <i class="iconfont icon-06tags"></i>标签: 
+          
+          <span class="span--tag">
+            <a href="/tags/%E7%AE%97%E6%B3%95/">
+              #算法
+            </a>
+          </span>
+          
+          <span class="span--tag">
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+              #学习
+            </a>
+          </span>
+          
+        
+      </span>
+    </div>
+    <div class="article-meta pull-right">
+    </div>
+  </div>
+</div>
+
+
+  <aside id="sidebar">
+    <p id="sidebar-header"></p>
+    <ol id="sidebar-toc"></ol>
+  </aside>
+  <script async>setTimeout(generateToc, 10);</script>
+
+
+  <nav class="post-navigation">
+    
+      <div class="nav-pre">
+        <i class="iconfont icon-prev"></i>
+        上一篇:
+        <a href="/2022/06/01/%E6%97%A5%E5%BF%972022-06-01/" target="_self">日志2022-06-01</a>
+      </div>
+    
+    
+      <div class="nav-next">
+        下一篇:
+        <a href="/2022/06/19/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/" target="_self">软件工程期末考试复习要点</a>
+        <i class="iconfont icon-next"></i>
+      </div>
+    
+  </nav>
+
+   
+
+   
+
+</div>
+
+
+      <footer>
+  <p class="site-info">
+    博客已萌萌哒运行<span id="time-to-now"></span><span class="my-face">(●'◡'●)ﾉ♥</span>
+    <br>
+    Theme - <a target="_blank" rel="noopener" href="https://github.com/dongyuanxin/theme-bmw">BMW</a> | Made With 💗 | Powered by <a target="_blank" rel="noopener" href="https://godbmw.com/">GodBMW</a>
+    <br>
+    
+      <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a>提供统计服务
+    
+  </p>
+</footer>
+
+
+
+<script>
+const timeToNowDOM = document.querySelector("#time-to-now");
+const startTimestamp = new Date(2021, 9, 1).getTime();
+
+const updateTimeStr = () => {
+  let offset = parseInt(
+      (new Date().getTime() - startTimestamp) / 1000,
+      10
+    ),
+    day = Math.floor(offset / 86400),
+    hour = Math.floor((offset % 86400) / 3600),
+    minute = Math.floor(((offset % 86400) % 3600) / 60),
+    second = Math.floor(((offset % 86400) % 3600) % 60);
+  timeToNowDOM.innerHTML =
+    day + "天" + hour + "小时" + minute + "分钟" + second + "秒";
+  setTimeout(updateTimeStr, 500);
+}
+
+setTimeout(updateTimeStr, 500);
+</script>
+
+
+      <div class="back-to-top hidden">
+  <span>
+    <i class="iconfont icon-60"></i><span></span>%
+  </span>
+</div>
+
+<script>
+const updateIconToTop = percent => {
+  let dom = document.querySelector(".back-to-top span span");
+  dom.innerText = percent;
+  if(percent < 1) {
+    document.querySelector(".back-to-top").className = "back-to-top hidden";
+  } else {
+    document.querySelector(".back-to-top").className = "back-to-top";
+  }
+}
+
+const handleScoll = () => {
+  let isRunning = false;
+  return () => {
+    if (isRunning) return;
+    isRunning = true;
+    window.requestAnimationFrame(timestamp => {
+      let scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop,
+        scrollHeight =
+          document.documentElement.scrollHeight ||
+          document.body.scrollHeight,
+        clientHeight =
+          document.documentElement.clientHeight ||
+          document.body.clientHeight;
+      isRunning = false;
+      if (scrollTop <= 1) {
+        updateIconToTop(0);
+        return;
+      }
+      if (scrollTop + clientHeight >= scrollHeight) {
+        updateIconToTop(100);
+      } else {
+        updateIconToTop(parseInt(
+          100 * scrollTop / (scrollHeight - clientHeight),
+          10
+        ));
+      }
+    });
+  };
+}
+
+const backToTop = () => {
+  let scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop,
+    delay = 10,
+    time = 200;
+  if (scrollTop <= 20) {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    return;
+  }
+  let step = Math.ceil(scrollTop * delay / time);
+  let timer = setInterval(() => {
+    scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop - step <= 0) {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      clearInterval(timer);
+    } else {
+      document.documentElement.scrollTop = scrollTop - step;
+      document.body.scrollTop = scrollTop - step;
+    }
+  }, delay);
+}
+
+document.addEventListener("scroll", handleScoll(), false);
+
+document.querySelector(".back-to-top").addEventListener("click", backToTop, false);
+
+</script>
+
+    </div>
+
+    
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script>
+  (() => {
+    const mathjaxConfig = {
+      showProcessingMessages: false, //关闭js加载过程信息
+      messageStyle: "none", //不显示信息
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+      },
+      "HTML-CSS": {
+        availableFonts: ["STIX", "TeX"], //可选字体
+        showMathMenu: false //关闭右击菜单显示
+      }
+    }
+
+    let mathjaxInterval = setInterval(() => {
+      if(!window.MathJax){
+        return;
+      }
+      window.MathJax.Hub.Config(mathjaxConfig)
+      window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('app')])
+
+      clearInterval(mathjaxInterval)
+    }, 10)    
+  })()
+</script>
+    
+
+    <script src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script>
+<script async>
+  let fancyTimer = setInterval(function(){
+    if(!window.$){
+      return;
+    }
+    $(document).ready(function() {
+      $(".post img").each(function () {
+        if($(this).parent().get(0).tagName.toLowerCase() === "a") {
+          return;
+        }
+        // $(this).attr("data-fancybox", "gallery"); // if you add 'data-fancybox', img will display after showed
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      });
+      
+      clearInterval(fancyTimer);
+    });
+  }, 10);
+</script>
+
+    
+  </body>
+
+</html>

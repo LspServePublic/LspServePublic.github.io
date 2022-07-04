@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <title>软件工程期末考试复习要点 | Ry2ushen的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="技术总结,总结,软件工程," />
+  
+
+  <script>
+    console.log('\n%c Hexo-theme-bmw v4.0 ' + '%c 🎉 https://github.com/dongyuanxin/theme-bmw 🎉\n' + '\n%c View demo online ' + '%c 🔍 https://godbmw.com/ 🔍  \n' , 'color: #fadfa3; background: #030307; padding:3px 0;', '', 'color: #fadfa3; background: #030307; padding:3px 0;', '');
+  </script>
+
+  
+
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/icon/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  
+<script src="/js/util.js"></script>
+<script src="/js/valine.min.js"></script>
+
+
+  
+
+  
+    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js" async></script>
+  
+
+  
+    <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+  
+  
+  <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" async></script>
+  
+  
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+
+    
+
+    <div id="app">
+
+      <div class="header-wrap">
+  <header>
+    <div class="site-brand">
+      <div class="site-title">
+        <a href="/">Ry2ushen&#39;s blog</a>
+      </div>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav-menu">
+      
+        <li class="nav-item" data-path="/">
+          
+            <a 
+              href="/"
+              target="_self"
+            >
+              主页
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          
+            <a 
+              href="/archives/"
+              target="_self"
+            >
+              归档
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          
+            <a 
+              href="/categories/"
+              target="_self"
+            >
+              分类
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          
+            <a 
+              href="/tags/"
+              target="_self"
+            >
+              标签
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          
+            <a 
+              href="/friends/"
+              target="_self"
+            >
+              友链
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          
+            <a 
+              href="/about/"
+              target="_self"
+            >
+              关于
+            </a>
+          
+        </li>
+      
+        <li class="nav-item" data-path="">
+          
+            <a href="javascript:void(0);" v-else>抓到我</a>
+            <ul class="nav-menu--dropdown">
+              
+                <li>
+                  <a 
+                    href="https://github.com/LspServePublic" 
+                    target="_blank"
+                  >
+                    Github
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+      </ul>
+    </nav>
+    <i class="iconfont icon-menu"></i>
+  </header>
+</div>
+
+<script>
+  let links = document.querySelectorAll('.nav-item');
+  for(let link of links){
+    let childrenLink = link.querySelector('ul');
+    link.addEventListener('mouseenter', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown active";
+      }
+    })
+    link.addEventListener('mouseleave', () => {
+      if(childrenLink) {
+        childrenLink.className = "nav-menu--dropdown";
+      }
+    })
+  }
+  let rootRealPath = getRealPath(window.location.pathname, true);
+  for(let link of links) {
+    let linkPath = link.getAttribute("data-path");
+    if(linkPath && getRealPath(linkPath, true) === rootRealPath) {
+      link.className = "nav-item hover";
+    }
+  }
+
+  let iconMenu = document.querySelector("i.iconfont.icon-menu"),
+    iconMenuClicked = false;
+  let navDOM = document.querySelector("nav.site-navigation");
+  iconMenu.addEventListener("click", () => {
+    iconMenuClicked 
+      ? navDOM.className = "site-navigation active"
+      : navDOM.className = "site-navigation";
+    iconMenuClicked = !iconMenuClicked;
+  })
+</script>
+
+      
+
+
+
+
+
+
+
+
+<div class="container post-index">
+
+  
+
+<div class="post">
+  <h1 class="article-title">
+    <span>软件工程期末考试复习要点</span>
+  </h1>
+  <div class="article-top-meta">
+    <span>
+      发布 : 
+      2022-06-19
+    </span>
+    
+      <span>
+        分类 : 
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/">
+            技术总结
+          </a>
+      </span>
+    
+    
+  </div>
+
+  
+
+  <div class="article-content">
+    <div class="markdown-body">
+      <h2 id="考试题型"><a href="#考试题型" class="headerlink" title="考试题型"></a>考试题型</h2><ol>
+<li>选择题</li>
+<li>填空题</li>
+<li>简答题</li>
+<li>设计题</li>
+<li>分析题</li>
+</ol>
+<h2 id="知识要点"><a href="#知识要点" class="headerlink" title="知识要点"></a>知识要点</h2><h3 id="软件工程概述"><a href="#软件工程概述" class="headerlink" title="软件工程概述"></a>软件工程概述</h3><ul>
+<li>软件工程的概念定义：将系统化的、 规范的、 可度量的方法应用于软件的开发、 运行和维护过程， 即将工程化应用于软件中的方法的研究</li>
+<li>软件危机：软件危机是指落后的软件生产方式无法满足迅速增长的计算机软件需求而 导致软件开发与维护过程中出现一系列严重问题的现象</li>
+<li>软件生命周期模型（软件过程模型）<ul>
+<li>瀑布模型<ol>
+<li>问题的定义及规划</li>
+<li>需求分析</li>
+<li>软件设计</li>
+<li>程序编码</li>
+<li>软件测试</li>
+<li>运行维护</li>
+</ol>
+</li>
+<li>增量模型</li>
+<li>螺旋模型</li>
+<li>喷泉模型</li>
+</ul>
+</li>
+</ul>
+<h3 id="结构化分析"><a href="#结构化分析" class="headerlink" title="结构化分析"></a>结构化分析</h3><ul>
+<li>软件需求规格说明书的内容和作用<ul>
+<li>内容：<ol>
+<li>引言</li>
+<li>任务概述</li>
+<li>功能需求</li>
+<li>性能需求</li>
+<li>运行需求</li>
+<li>非功能性需求</li>
+</ol>
+</li>
+<li>作用：需求分析位于开发与测试的起始阶段，如果在需求阶段存在疑惑，将会导致研发出来的软件需求返工，增加软件开发成工，会导致版本不能及时交付给客户，影响深远</li>
+</ul>
+</li>
+<li>数据流（DFD）图的画图原则<ol>
+<li>一个加工的输出数据流不应与输入数据流同名，即使它们的组成成分相同</li>
+<li>保持数据守恒</li>
+<li>每个加工必须既有输入数据流，又有输出数据流</li>
+<li>所有的数据流必须以一个外部实体开始，并以一个外部实体结束</li>
+<li>外部实体之间不应该存在数据流</li>
+</ol>
+</li>
+<li>结构化（SA）方法的工具有哪些<ul>
+<li>数据流图</li>
+<li>数据字典</li>
+<li>实体关系图</li>
+<li>系统流程图</li>
+</ul>
+</li>
+<li>数据流图的基本图形符号</li>
+<li>软件需求分析的任务<ol>
+<li>功能需求</li>
+<li>性能需求</li>
+<li>可靠性和可利用性需求</li>
+<li>出错处理需求</li>
+<li>接口需求</li>
+<li>约束</li>
+<li>逆向需求</li>
+<li>将来可能提出的要求</li>
+</ol>
+</li>
+<li>实体关系模型（ER模型）</li>
+</ul>
+<h3 id="面向对象分析"><a href="#面向对象分析" class="headerlink" title="面向对象分析"></a>面向对象分析</h3><ul>
+<li>面向对象分析方法要建立的三类模型<ol>
+<li>对象模型</li>
+<li>动态模型</li>
+<li>功能模型</li>
+</ol>
+</li>
+<li>状态图的概念：状态图用于揭示Actor、类、子系统和组件的复杂特性，为实时系统建模。说明对象在它的生命周期中响应事件所经历的状态序列，以及它们对那些事件的响应。</li>
+</ul>
+<h3 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h3><ul>
+<li>用例图</li>
+<li>类图</li>
+<li>状态图</li>
+<li>序列图</li>
+</ul>
+<h3 id="结构化设计"><a href="#结构化设计" class="headerlink" title="结构化设计"></a>结构化设计</h3><ul>
+<li>数据流图到软件结构图的映射</li>
+<li>模块独立性<ol>
+<li>耦合：内聚是模块功能强度 (即一个模块内部各个元素彼此结合的紧密程度) 的度量。<br>模块之间的连接越紧密联系越多，耦合性就越高，但模块独立性就越弱</li>
+<li>内聚：耦合是模块之间的相对独立性 (即相互连接的紧密程度) 的度量。<br>一个模块内部各个元素之间的联系越紧密，则它的内聚性就越高，相对地，它与其他模块之间的耦合性就会降低而模块独立性就越强</li>
+</ol>
+</li>
+<li>传统的详细设计工具（过程设计工具）<ul>
+<li>程序流程图</li>
+<li>N-S图</li>
+<li>PDL伪语言</li>
+<li>PAD图</li>
+</ul>
+</li>
+</ul>
+<h3 id="面向对象设计"><a href="#面向对象设计" class="headerlink" title="面向对象设计"></a>面向对象设计</h3><h3 id="系统实现"><a href="#系统实现" class="headerlink" title="系统实现"></a>系统实现</h3><ul>
+<li><p>软件测试方法</p>
+<ul>
+<li>黑盒测试<ul>
+<li>等价类划分法</li>
+<li>边界值分析法</li>
+</ul>
+</li>
+<li>白盒测试<ul>
+<li>逻辑覆盖法</li>
+<li>路径覆盖法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>回归测试：目的是对验收测试结果进行验证和修改</p>
+</li>
+<li><p>测试的阶段</p>
+<ol>
+<li>单元测试</li>
+<li>集成测试</li>
+<li>系统测试</li>
+<li>验收测试</li>
+<li>回归测试</li>
+<li>Alpha测试</li>
+<li>Beta测试</li>
+</ol>
+</li>
+</ul>
+<h2 id="各类题型复习重点"><a href="#各类题型复习重点" class="headerlink" title="各类题型复习重点"></a>各类题型复习重点</h2><ul>
+<li><p>选择题<br>复习重点中提到的相关知识的课后选择题</p>
+</li>
+<li><p>填空题<br>复习重点中提到的相关知识的课后填空题</p>
+</li>
+<li><p>简答题</p>
+<ol>
+<li>可行性研究从哪些方面研究<ol>
+<li>经济可行性</li>
+<li>技术可行性</li>
+<li>操作可行性</li>
+<li>社会环境可行性至少包括两种因素：市场和政策</li>
+<li>法律可行性</li>
+<li>使用可行性</li>
+</ol>
+</li>
+<li>模块的内聚性有哪些类型、耦合性有哪些类型</li>
+<li>数据流图转换为软件结构图的步骤<ol>
+<li>变化分析法（适用变换型系统，也就是行为类似——输入数据、变换数据、输出数据这一过程的系统）<ol>
+<li>重新分析数据流图</li>
+<li>找出系统的逻辑输入、逻辑输出和中心变换部分</li>
+<li>给软件结构分层</li>
+</ol>
+</li>
+<li>事务分析法（适用于事务型系统，也就是行为类似——根据输入的数据的特点找到合适的处理单元处理后再输出的系统）<ol>
+<li>明确事务源</li>
+<li>规划适当的事务型结构</li>
+<li>建立事务处理模块</li>
+<li>定义操作模块所实现的全部细节模块</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>瀑布模型的适应场景：适用于传统软件工程面向过程的结构化软件开发场景</li>
+<li>黑盒测试的概念及主要方法<ul>
+<li>概念：着眼于程序外部结构、不考虑内部逻辑结构、针对软件界面和软件功能进行测试的测试方法</li>
+<li>主要方法：<ul>
+<li>边界值分析法</li>
+<li>等价类划分法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>白盒测试的概念及主要方法<ul>
+<li>概念：全面了解程序内部结构、对所有逻辑路径进行测试的测试方法</li>
+<li>主要方法：<ul>
+<li>逻辑覆盖法<ol>
+<li>语句覆盖</li>
+<li>判定覆盖</li>
+<li>条件覆盖</li>
+<li>判定&#x2F;条件覆盖</li>
+<li>条件组合覆盖</li>
+</ol>
+</li>
+<li>路径覆盖法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>设计题<br>软件测试，对给定案例进行测试用例设计，采取<strong>逻辑覆盖法</strong>或<strong>基本路径覆盖法</strong></p>
+<ul>
+<li>基本路径覆盖法中环路复杂性的计算方法有以下3种：<ul>
+<li>程序的环形复杂度计算公式为 V(G)&#x3D;m-n+2，其中m是程序流程图中边的数量n是结点的数量</li>
+<li>如果P是程序流图中判定结点的个数，那么V(G)&#x3D;P+1</li>
+<li>如果A是程序流图中封闭区域的数目，区域的个数定义为边和结点圈定的封闭区域 数加上图形外的区域数1，那么V(G)&#x3D;A+1</li>
+</ul>
+</li>
+<li>环路复杂度也就是程序流图的基本路径数量</li>
+<li>基本路径的</li>
+</ul>
+</li>
+<li><p>分析题<br>对给出的模拟系统的功能需求分析描述进行分析，采取<strong>用例图</strong>建立系统的功能模型，用<strong>类图</strong>建立系统的对象模型</p>
+</li>
+</ul>
+
+    </div>
+  </div>
+  
+    <div class="copy-right">
+      <div class="markdown-body">
+        <blockquote>
+        
+        
+          本文作者 : Ry2ushen <br/>
+        
+        原文链接 : <a href="">https://ryuushen.ml/2022/06/19/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E8%A6%81%E7%82%B9/</a><br>
+        版权声明 : 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+        </blockquote>
+      </div>
+    </div>
+  
+  
+  
+    <div class="social-share"
+  style="margin-top: -2rem"
+  data-wechat-qrcode-title="<p>微信扫一扫</p>"
+  data-wechat-qrcode-helper="<p>微信右上角, 扫一扫分享</p>"
+   data-sites="qzone, qq, weibo, wechat, douban, google, facebook, twitter" 
+  
+>
+  <span style="color: #6b7487; font-size: 1.4rem;">分享到: </span>
+</div>
+<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js" async>
+  
+
+  
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+      <span>
+        
+          <i class="iconfont icon-06tags"></i>标签: 
+          
+          <span class="span--tag">
+            <a href="/tags/%E6%80%BB%E7%BB%93/">
+              #总结
+            </a>
+          </span>
+          
+          <span class="span--tag">
+            <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">
+              #软件工程
+            </a>
+          </span>
+          
+        
+      </span>
+    </div>
+    <div class="article-meta pull-right">
+    </div>
+  </div>
+</div>
+
+
+  <aside id="sidebar">
+    <p id="sidebar-header"></p>
+    <ol id="sidebar-toc"></ol>
+  </aside>
+  <script async>setTimeout(generateToc, 10);</script>
+
+
+  <nav class="post-navigation">
+    
+      <div class="nav-pre">
+        <i class="iconfont icon-prev"></i>
+        上一篇:
+        <a href="/2022/06/02/%E6%97%A5%E5%BF%972022-06-02/" target="_self">日志2022-06-02</a>
+      </div>
+    
+    
+      <div class="nav-next">
+        下一篇:
+        <a href="/2022/07/01/%E6%97%A5%E5%BF%972022-07-01/" target="_self">日志2022-07-01</a>
+        <i class="iconfont icon-next"></i>
+      </div>
+    
+  </nav>
+
+   
+
+   
+
+</div>
+
+
+      <footer>
+  <p class="site-info">
+    博客已萌萌哒运行<span id="time-to-now"></span><span class="my-face">(●'◡'●)ﾉ♥</span>
+    <br>
+    Theme - <a target="_blank" rel="noopener" href="https://github.com/dongyuanxin/theme-bmw">BMW</a> | Made With 💗 | Powered by <a target="_blank" rel="noopener" href="https://godbmw.com/">GodBMW</a>
+    <br>
+    
+      <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a>提供统计服务
+    
+  </p>
+</footer>
+
+
+
+<script>
+const timeToNowDOM = document.querySelector("#time-to-now");
+const startTimestamp = new Date(2021, 9, 1).getTime();
+
+const updateTimeStr = () => {
+  let offset = parseInt(
+      (new Date().getTime() - startTimestamp) / 1000,
+      10
+    ),
+    day = Math.floor(offset / 86400),
+    hour = Math.floor((offset % 86400) / 3600),
+    minute = Math.floor(((offset % 86400) % 3600) / 60),
+    second = Math.floor(((offset % 86400) % 3600) % 60);
+  timeToNowDOM.innerHTML =
+    day + "天" + hour + "小时" + minute + "分钟" + second + "秒";
+  setTimeout(updateTimeStr, 500);
+}
+
+setTimeout(updateTimeStr, 500);
+</script>
+
+
+      <div class="back-to-top hidden">
+  <span>
+    <i class="iconfont icon-60"></i><span></span>%
+  </span>
+</div>
+
+<script>
+const updateIconToTop = percent => {
+  let dom = document.querySelector(".back-to-top span span");
+  dom.innerText = percent;
+  if(percent < 1) {
+    document.querySelector(".back-to-top").className = "back-to-top hidden";
+  } else {
+    document.querySelector(".back-to-top").className = "back-to-top";
+  }
+}
+
+const handleScoll = () => {
+  let isRunning = false;
+  return () => {
+    if (isRunning) return;
+    isRunning = true;
+    window.requestAnimationFrame(timestamp => {
+      let scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop,
+        scrollHeight =
+          document.documentElement.scrollHeight ||
+          document.body.scrollHeight,
+        clientHeight =
+          document.documentElement.clientHeight ||
+          document.body.clientHeight;
+      isRunning = false;
+      if (scrollTop <= 1) {
+        updateIconToTop(0);
+        return;
+      }
+      if (scrollTop + clientHeight >= scrollHeight) {
+        updateIconToTop(100);
+      } else {
+        updateIconToTop(parseInt(
+          100 * scrollTop / (scrollHeight - clientHeight),
+          10
+        ));
+      }
+    });
+  };
+}
+
+const backToTop = () => {
+  let scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop,
+    delay = 10,
+    time = 200;
+  if (scrollTop <= 20) {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    return;
+  }
+  let step = Math.ceil(scrollTop * delay / time);
+  let timer = setInterval(() => {
+    scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop - step <= 0) {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      clearInterval(timer);
+    } else {
+      document.documentElement.scrollTop = scrollTop - step;
+      document.body.scrollTop = scrollTop - step;
+    }
+  }, delay);
+}
+
+document.addEventListener("scroll", handleScoll(), false);
+
+document.querySelector(".back-to-top").addEventListener("click", backToTop, false);
+
+</script>
+
+    </div>
+
+    
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script>
+  (() => {
+    const mathjaxConfig = {
+      showProcessingMessages: false, //关闭js加载过程信息
+      messageStyle: "none", //不显示信息
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+      },
+      "HTML-CSS": {
+        availableFonts: ["STIX", "TeX"], //可选字体
+        showMathMenu: false //关闭右击菜单显示
+      }
+    }
+
+    let mathjaxInterval = setInterval(() => {
+      if(!window.MathJax){
+        return;
+      }
+      window.MathJax.Hub.Config(mathjaxConfig)
+      window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('app')])
+
+      clearInterval(mathjaxInterval)
+    }, 10)    
+  })()
+</script>
+    
+
+    <script src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script>
+<script async>
+  let fancyTimer = setInterval(function(){
+    if(!window.$){
+      return;
+    }
+    $(document).ready(function() {
+      $(".post img").each(function () {
+        if($(this).parent().get(0).tagName.toLowerCase() === "a") {
+          return;
+        }
+        // $(this).attr("data-fancybox", "gallery"); // if you add 'data-fancybox', img will display after showed
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      });
+      
+      clearInterval(fancyTimer);
+    });
+  }, 10);
+</script>
+
+    
+  </body>
+
+</html>
